@@ -1,4 +1,4 @@
-Unos brojeva dok korisnik ne unese nulu:
+//Unos brojeva dok korisnik ne unese nulu:
 
 #include <stdio.h>
 
