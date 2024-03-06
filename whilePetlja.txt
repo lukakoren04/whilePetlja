@@ -1,0 +1,38 @@
+U većini računalnih programskih jezika, while petlja je naredba kontrolnog tijeka koja 
+omogućuje ponavljanje izvođenja koda na temelju danog Booleovog uvjeta. Dok se petlja može 
+smatrati ponavljajućom if naredbom.
+
+Konstrukcija while petlje sastoji se od bloka koda i uvjeta/izraza. Uvjet/izraz se procjenjuje, a ako
+je uvjet/izraz istinit, izvršava se kod unutar svih njihovih sljedbenika u bloku. Ovo se ponavlja sve dok 
+uvjet/izraz ne postane lažan. Budući da while petlja provjerava uvjet/izraz prije nego što se blok izvrši, 
+kontrolna je struktura često poznata i kao predtestna petlja. Usporedite ovo s do while petljom, koja testira 
+uvjet/izraz nakon što se petlja izvrši.
+
+
+Primjer: 
+
+#include <stdio.h>
+
+int main() {
+    // Inicijalizacija brojača
+    int brojac = 0;
+
+    // While petlja
+    while (brojac < 5) {
+        printf("Trenutna vrijednost brojaca: %d\n", brojac);
+
+        // Inkrementiranje brojača
+        brojac++;
+    }
+
+    printf("Petlja zavrsena!\n");
+
+    return 0;
+}
+
+
+While se često koristi kada broj iteracija nije unaprijed poznat ili ovisi o određenim uvjetima.
+Primjena za unos korisničkih podataka: while petlja često se koristi za obradu korisničkih unosa 
+dok se ne unese ispravan podatak ili dok se ne zadovolji određeni uvjet. Razlika između do-while 
+i while: do-while petlja je slična while petlji, ali uvjet se provjerava nakon izvršavanja bloka
+koda. To znači da će se blok koda izvršiti barem jednom, čak i ako uvjet nije ispunjen.
