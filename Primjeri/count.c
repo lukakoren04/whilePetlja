@@ -1,27 +1,21 @@
+Unos brojeva dok korisnik ne unese nulu:
+
 #include <stdio.h>
 
-int main()
-{ 
+int main() {
+    int unos;
+    
+    printf("Unesite brojeve (unesite 0 za kraj): ");
+    while (1) {
+        scanf("%d", &unos);
+        
+        if (unos == 0) {
+            printf("Unesen je 0. Kraj programa.\n");
+            break;
+        }
+        
+        printf("Unesen je broj: %d\n", unos);
+    }
 
-	//loop counter declaration
-	int number;
-	
-	//assign initial value 
-	//from where we want to print the numbers
-	number =1;
-	
-	//print statement
-	printf("Numbers from 1 to 10: \n");
-	
-	//while loop, that will print numbers 
-	//from 1 to 10
-	while(number<=10)
-	{
-		//printing the numbers
-		printf("%d ",number);
-		//increasing loop counter by 1
-		number++;
-	}
-	
-	return 0;
+    return 0;
 }
